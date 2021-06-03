@@ -1,0 +1,135 @@
+\documentclass[14pt,  openany]{book}
+\pagestyle{plain}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{extsizes}
+\usepackage[english,russian]{babel}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{hyphsubst}
+\usepackage{tempora}
+\usepackage{amsmath}
+\usepackage[nottoc,notlot,notlof,numbib]{tocbibind}
+\usepackage{natbib}
+\usepackage{indentfirst}
+\usepackage{titlesec}
+\titleformat{\chapter}[display]
+  {\normalfont\bfseries}{}{0pt}{\Huge}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black
+}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.98,0.98,0.98}
+
+\lstdefinestyle{mystyle}{
+    frame=single,
+    aboveskip=5mm,
+    belowskip=5mm,
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{blue},
+    numberstyle=\small\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=7pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+  
+\geometry{
+    a4paper,
+    left=30mm,
+    top=20mm,
+    right=15mm,
+    bottom=20mm
+}
+\linespread{1.5}
+
+\title{Проверка консистентности и изоляции транзакций в распределенных системах}
+\author{Исаева Анна}
+\date{2021}
+\setlength{\parindent}{1.25cm}
+
+\begin{document}
+\maketitle
+\chapter*{Аннотация}
+\par
+аннотация \newline
+объем аннотации <  1500 символов,  отразить цели и задачи работы, полученные результаты, рекомендации, предложенные на основании данной работы
+\setcounter{page}{2}
+\tableofcontents
+\clearpage
+
+
+
+\chapter{Введение}
+
+Существует спрос на инструменты проверки изоляции транзакций, так  как базы данных не обеспечивают тот уровень изоляции, на который претендуют.
+\begin{itemize}
+\item пользователю хочется научиться понимать про ту или иную базу данных, насколько она соответствует документации (это необходимо для того, чтобы выбрать базу, максимально удовлетворяющую потребностям; пользователя)
+\item удобный инструмент для тестирования согласованности может существенно помочь на этапе разработки распределенных систем, возможно, стать одним из этапов CI/CD процесса;
+\item Jepsen проводит свои исследования независимо и в соответствии с их этической политикой. Это вносит большой вклад в сообщество, помогает в развитии и совершенствовании распределенных систем.
+\end{itemize}
+
+Большинство распределенных систем стремятся к достижению баланса между временем выполнения операций и согласованностью.  Один из инструментов для проверки гарантии согласованности - это инструмент хаос-тестирования Jepsen.  Хаос-тестирование ---  это тестирование путем внесения в систему незапланированных сбоев.  Наблюдая за поведением системы, можно понять, как сделать распределенную систему более надежной. Хаос тестирование это важная часть тестирования, потому что помогает выявить состояния гонки (race condition), которые сложно иначе обнаружить в процессе разработки.
+
+
+\section{Цели работы}
+\begin{itemize}
+  \item Получить опыт работы с выбранным инструментом проверки свойств транзакций (Jepsen),
+  \item Изучить выполненные данным инструментом исследования различных баз данных,
+  \item Исследовать с помощью выбранного инструмента реальную базу данных (Azure Cosmos DB), которая еще не была проанализирована,
+  \item Сравнить уровень изоляции, заявленный в документации, и уровень, установленный с помощью тестов.
+\end{itemize}
+
+\section{Основные понятия}
+Введем основные понятия,  необходимые в дальнейшем.
+
+\emph{Хаос-тестирование} ---  это тестирование путем внесения в систему незапланированных сбоев.
+
+\emph{Модель согласованности} --- набор гарантий о предсказуемости результатов чтения,  записи и изменения данных,  позволяющий рассуждать о поведении компьютерной программы.
+
+\section{План работы}
+В \textit{Главе 2} будут рассмотрены 
+\par
+В \textit{Главе 3} будет представлен анализ
+ \par
+\textit{Глава 4} включит в себя .
+
+%\chapter{1}
+
+%\section{1.1}
+
+%\subsection{1.1.1}
+
+
+ 
+\chapter{Заключение}
+Выводы
+%\bibliographystyle{unsrt}
+%\bibliography{references}
+
+\chapter{Приложения}
+
+
+\end{document}
