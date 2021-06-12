@@ -1,2 +1,6 @@
 *.DS_Store
 .DS_Store
+file.aux
+file.log
+file.synctex.gz
+file.toc
