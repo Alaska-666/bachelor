@@ -54,9 +54,21 @@ doi = {10.1109/ICDE.2000.839388}
    howpublished={\url{"https://blog.acolyer.org/2016/02/25/generalized-isolation-level-definitions/"}}
 }
 
+@misc{CritiqueANSI_SQL,
+   title = "A Critique of ANSI SQL Isolation Levels",
+   author = "Adrian Colyer",
+   howpublished={\url{"https://blog.acolyer.org/2016/02/24/a-critique-of-ansi-sql-isolation-levels/"}}
+}
+
 @misc{habrMemoryModel,
    title = "Модель памяти в примерах и не только",
    howpublished={\url{"https://habr.com/ru/post/133981/"}}
+}
+
+@misc{sookocheff,
+   title = "Paper Review: Generalized Isolation Level Definitions",
+   author = "Kevin Sookocheff",
+   howpublished={\url{"https://sookocheff.com/post/databases/generalized-isolation-level-definitions/"}}
 }
 
 @InProceedings{cerone_et_al,
@@ -78,23 +90,6 @@ doi = {10.1109/ICDE.2000.839388}
   annote =	{Keywords: Replication, Consistency models, Transactions}
 }
 
-@inproceedings{10.1145/223784.223785,
-author = {Berenson, Hal and Bernstein, Phil and Gray, Jim and Melton, Jim and O'Neil, Elizabeth and O'Neil, Patrick},
-title = {A Critique of ANSI SQL Isolation Levels},
-year = {1995},
-isbn = {0897917316},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://doi.org/10.1145/223784.223785},
-doi = {10.1145/223784.223785},
-abstract = {ANSI SQL-92 [MS, ANSI] defines Isolation Levels in terms of phenomena: Dirty Reads, Non-Repeatable Reads, and Phantoms. This paper shows that these phenomena and the ANSI SQL definitions fail to properly characterize several popular isolation levels, including the standard locking implementations of the levels covered. Ambiguity in the statement of the phenomena is investigated and a more formal statement is arrived at; in addition new phenomena that better characterize isolation types are introduced. Finally, an important multiversion isolation type, called Snapshot Isolation, is defined.},
-booktitle = {Proceedings of the 1995 ACM SIGMOD International Conference on Management of Data},
-pages = {1–10},
-numpages = {10},
-location = {San Jose, California, USA},
-series = {SIGMOD '95}
-}
-
 @article{BerensonIsolationLevels,
 author = {Berenson, Hal and Bernstein, Phil and Gray, Jim and Melton, Jim and O'Neil, Elizabeth and O'Neil, Patrick},
 title = {A Critique of ANSI SQL Isolation Levels},
@@ -112,3 +107,17 @@ month = may,
 pages = {1–10},
 numpages = {10}
 }
+
+@phdthesis{adya99:_weak_consis,
+   author = {Atul Adya},
+   title = {Weak Consistency: A Generalized Theory and Optimistic
+	Implementations for Distributed Transactions},
+   school = {MIT},
+   type = {{Ph.D.}},
+   address = {Cambridge, MA, USA},
+   month = mar,
+   year = {1999},
+   note = {Also as Technical Report MIT/LCS/TR-786}
+}
+
+
